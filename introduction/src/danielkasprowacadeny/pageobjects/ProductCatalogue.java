@@ -28,19 +28,11 @@ public class ProductCatalogue extends AbstractComponent{
 	
 	@FindBy(css="ng-animating3")
 	WebElement spinner;
-	@FindBy(css=".cartSection h3")
-	List<WebElement> cartProducts;
+
 	
 	By productsBy = By.cssSelector(".mb-3");
 	By addToCart = By.cssSelector(".card-body button:last-of-type");
 	By toastMessage = By.cssSelector("#toast-container");
-	By cart = By.cssSelector("[routerlink*='cart']");
-	By totalRow = By.cssSelector(".totalRow button");
-	By placeHolder = By.cssSelector("[placeholder='Select Country']");
-	By taResults = By.cssSelector(".ta-results");
-	By buttonTaItem = By.xpath("(//button[contains(@class,'ta-item')])[2]");
-	By actionSubmit = By.cssSelector(".action__submit");
-	By heroPrimary = By.cssSelector(".hero-primary");
 	
 	public List<WebElement> getProductList() {
 		waitForElementToAppear(productsBy);
@@ -60,19 +52,4 @@ public class ProductCatalogue extends AbstractComponent{
 		waitForElementToDissappear(spinner);
 	}
 	
-	public void cartOpenFinish(String productName) {
-		driver.findElement(cart).click();
-		Boolean match = cartProducts.stream().anyMatch(cartProduct-> cartProduct.getText().equalsIgnoreCase(productName));
-		Assert.assertTrue(match);
-		driver.findElement(totalRow).click();
-		Actions a = new Actions(driver);
-		a.sendKeys(driver.findElement(placeHolder), "india").build().perform();
-		waitForElementToAppear(taResults);
-		driver.findElement(buttonTaItem).click();
-		driver.findElement(actionSubmit).click();
-		
-		String confirmMessage = driver.findElement(heroPrimary).getText();
-		Assert.assertTrue(confirmMessage.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
-
-	}
 }

@@ -29,10 +29,21 @@ public class LandingPage extends AbstractComponent{
 	@FindBy(id = "login")
 	WebElement submit;
 
-	public void loginApplication(String email, String password) {
+	@FindBy(css = "[class*='flyInOut']")
+	WebElement errorMessage;
+	
+	public ProductCatalogue loginApplication(String email, String password) {
 		userEmail.sendKeys(email);
 		passwordEle.sendKeys(password);
 		submit.click();
+		ProductCatalogue productCatalogue = new ProductCatalogue(driver);		
+		return productCatalogue;
+	}
+	
+	public String getErrorMessage() {
+		waitForWebElementToAppear(errorMessage);
+	
+		return errorMessage.getText();
 	}
 	
 	public void goTo() {
