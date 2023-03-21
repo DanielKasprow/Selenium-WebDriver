@@ -3,14 +3,14 @@
 <suite parallel = "tests" name="Suite">
 	<test thread-count="5" name="Test">
 		<classes>
-			<class name="framework.StandAloneTest" />
+			<class name="testComponent.tests.StandAloneTest" />
 		</classes>
 	</test> <!-- Test -->
 
 
 	<test thread-count="5" name="Error Validation Test">
 		<classes>
-			<class name="framework.ErrorValidationTest" />
+			<class name="testComponent.tests.ErrorValidationTest" />
 		</classes>
 	</test> <!-- Test -->
 
