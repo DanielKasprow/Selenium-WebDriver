@@ -38,6 +38,66 @@
 
 	</dependencies>
 
+	<profiles>
+
+		<profile>
+			<id>Regression</id>
+			<build>
+				<pluginManagement>
+					<plugins>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-surefire-plugin</artifactId>
+							<version>3.0.0</version>
+							<configuration>
+								<suiteXmlFiles>
+									<suiteXmlFile>testSuites/newTestng.xml</suiteXmlFile>
+								</suiteXmlFiles>
+							</configuration>
+						</plugin>
+					</plugins>
+				</pluginManagement>
+			</build>
+		</profile>
+		<profile>
+			<id>Purchase</id>
+			<build>
+				<pluginManagement>
+					<plugins>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-surefire-plugin</artifactId>
+							<version>3.0.0</version>
+							<configuration>
+								<suiteXmlFiles>
+									<suiteXmlFile>testSuites/PurchaseTest.xml</suiteXmlFile>
+								</suiteXmlFiles>
+							</configuration>
+						</plugin>
+					</plugins>
+				</pluginManagement>
+			</build>
+		</profile>
+		<profile>
+			<id>ErrorValidation</id>
+			<build>
+				<pluginManagement>
+					<plugins>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-surefire-plugin</artifactId>
+							<version>3.0.0</version>
+							<configuration>
+								<suiteXmlFiles>
+									<suiteXmlFile>testSuites\ErrorValidationTests.xml</suiteXmlFile>
+								</suiteXmlFiles>
+							</configuration>
+						</plugin>
+					</plugins>
+				</pluginManagement>
+			</build>
+		</profile>
+	</profiles>
 
 	<build>
 		<sourceDirectory>src</sourceDirectory>
@@ -49,6 +109,7 @@
 					<release>14</release>
 				</configuration>
 			</plugin>
+
 		</plugins>
 	</build>
 </project>

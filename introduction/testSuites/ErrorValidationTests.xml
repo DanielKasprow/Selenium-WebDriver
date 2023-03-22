@@ -4,7 +4,7 @@
 
 <groups>
 	<run>
-	<include name="ErrorHanling"></include>
+	<include name="ErrorHandling"></include>
 	</run>
 </groups>
 	<test thread-count="5" name="Test">
