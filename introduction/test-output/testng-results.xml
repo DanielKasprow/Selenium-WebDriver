@@ -1,89 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
+<testng-results retried="1" ignored="0" total="3" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-21T15:17:54 CET" name="Default suite" finished-at="2023-03-21T15:17:54 CET" duration-ms="82">
+  <suite started-at="2023-03-22T14:11:16 CET" name="Default suite" finished-at="2023-03-22T14:11:38 CET" duration-ms="22166">
     <groups>
-      <group name="ErrorHanling">
-        <method signature="ErrorValidationTest.LoginErrorValidation()[pri:0, instance:testComponent.tests.ErrorValidationTest@42a48628]" name="LoginErrorValidation" class="testComponent.tests.ErrorValidationTest"/>
-      </group> <!-- ErrorHanling -->
+      <group name="ErrorHandling">
+        <method signature="ErrorValidationTest.LoginErrorValidation()[pri:0, instance:testComponent.tests.ErrorValidationTest@6aeb35e6]" name="LoginErrorValidation" class="testComponent.tests.ErrorValidationTest"/>
+      </group> <!-- ErrorHandling -->
     </groups>
-    <test started-at="2023-03-21T15:17:54 CET" name="Default test" finished-at="2023-03-21T15:17:54 CET" duration-ms="82">
+    <test started-at="2023-03-22T14:11:16 CET" name="Default test" finished-at="2023-03-22T14:11:38 CET" duration-ms="22166">
       <class name="testComponent.tests.ErrorValidationTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:testComponent.tests.ErrorValidationTest@42a48628]" started-at="2023-03-21T15:17:54 CET" name="launchApplication" finished-at="2023-03-21T15:17:54 CET" duration-ms="8" status="FAIL">
-          <exception class="java.io.FileNotFoundException">
-            <message>
-              <![CDATA[C:\Users\trane\git\Selenium-WebDriver-with-Java--Basics-to-Advanced-Frameworks-Course\introduction\src\danielkasprowacademy\resources\GlobalData.properties (System nie może odnaleźć określonej ścieżki)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.io.FileNotFoundException: C:\Users\trane\git\Selenium-WebDriver-with-Java--Basics-to-Advanced-Frameworks-Course\introduction\src\danielkasprowacademy\resources\GlobalData.properties (System nie może odnaleźć określonej ścieżki)
-at java.base/java.io.FileInputStream.open0(Native Method)
-at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
-at testComponent.TestComponents.BaseTest.initializeDriver(BaseTest.java:30)
-at testComponent.TestComponents.BaseTest.launchApplication(BaseTest.java:64)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.io.FileNotFoundException -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:testComponent.tests.ErrorValidationTest@6aeb35e6]" started-at="2023-03-22T14:11:16 CET" name="launchApplication" finished-at="2023-03-22T14:11:20 CET" duration-ms="3686" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="LoginErrorValidation()[pri:0, instance:testComponent.tests.ErrorValidationTest@42a48628]" started-at="2023-03-21T15:17:54 CET" name="LoginErrorValidation" finished-at="2023-03-21T15:17:54 CET" duration-ms="0" status="SKIP">
-          <exception class="java.io.FileNotFoundException">
+        <test-method retried="true" signature="LoginErrorValidation()[pri:0, instance:testComponent.tests.ErrorValidationTest@6aeb35e6]" started-at="2023-03-22T14:11:20 CET" name="LoginErrorValidation" finished-at="2023-03-22T14:11:20 CET" duration-ms="497" status="SKIP">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[C:\Users\trane\git\Selenium-WebDriver-with-Java--Basics-to-Advanced-Frameworks-Course\introduction\src\danielkasprowacademy\resources\GlobalData.properties (System nie może odnaleźć określonej ścieżki)]]>
+              <![CDATA[expected [Incorrect email or password.] but found [Incorrect email or pasfsword.]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.io.FileNotFoundException: C:\Users\trane\git\Selenium-WebDriver-with-Java--Basics-to-Advanced-Frameworks-Course\introduction\src\danielkasprowacademy\resources\GlobalData.properties (System nie może odnaleźć określonej ścieżki)
-at java.base/java.io.FileInputStream.open0(Native Method)
-at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
-at testComponent.TestComponents.BaseTest.initializeDriver(BaseTest.java:30)
-at testComponent.TestComponents.BaseTest.launchApplication(BaseTest.java:64)
+              <![CDATA[java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect email or pasfsword.]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at testComponent.tests.ErrorValidationTest.LoginErrorValidation(ErrorValidationTest.java:28)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
@@ -108,133 +58,40 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.io.FileNotFoundException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testComponent.tests.ErrorValidationTest@42a48628]" started-at="2023-03-21T15:17:54 CET" name="tearDown" finished-at="2023-03-21T15:17:54 CET" duration-ms="0" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.driver" is null
-at testComponent.TestComponents.BaseTest.tearDown(BaseTest.java:74)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:613)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testComponent.tests.ErrorValidationTest@6aeb35e6]" started-at="2023-03-22T14:11:20 CET" name="tearDown" finished-at="2023-03-22T14:11:21 CET" duration-ms="189" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:testComponent.tests.ErrorValidationTest@42a48628]" started-at="2023-03-21T15:17:54 CET" name="launchApplication" finished-at="2023-03-21T15:17:54 CET" duration-ms="0" status="FAIL">
-          <exception class="java.io.FileNotFoundException">
-            <message>
-              <![CDATA[C:\Users\trane\git\Selenium-WebDriver-with-Java--Basics-to-Advanced-Frameworks-Course\introduction\src\danielkasprowacademy\resources\GlobalData.properties (System nie może odnaleźć określonej ścieżki)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.io.FileNotFoundException: C:\Users\trane\git\Selenium-WebDriver-with-Java--Basics-to-Advanced-Frameworks-Course\introduction\src\danielkasprowacademy\resources\GlobalData.properties (System nie może odnaleźć określonej ścieżki)
-at java.base/java.io.FileInputStream.open0(Native Method)
-at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
-at testComponent.TestComponents.BaseTest.initializeDriver(BaseTest.java:30)
-at testComponent.TestComponents.BaseTest.launchApplication(BaseTest.java:64)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.io.FileNotFoundException -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:testComponent.tests.ErrorValidationTest@6aeb35e6]" started-at="2023-03-22T14:11:21 CET" name="launchApplication" finished-at="2023-03-22T14:11:24 CET" duration-ms="2876" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="ProductErrorValidation()[pri:0, instance:testComponent.tests.ErrorValidationTest@42a48628]" started-at="2023-03-21T15:17:54 CET" name="ProductErrorValidation" finished-at="2023-03-21T15:17:54 CET" duration-ms="0" status="SKIP">
-          <exception class="java.io.FileNotFoundException">
+        <test-method signature="LoginErrorValidation()[pri:0, instance:testComponent.tests.ErrorValidationTest@6aeb35e6]" started-at="2023-03-22T14:11:24 CET" name="LoginErrorValidation" finished-at="2023-03-22T14:11:24 CET" duration-ms="496" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[C:\Users\trane\git\Selenium-WebDriver-with-Java--Basics-to-Advanced-Frameworks-Course\introduction\src\danielkasprowacademy\resources\GlobalData.properties (System nie może odnaleźć określonej ścieżki)]]>
+              <![CDATA[expected [Incorrect email or password.] but found [Incorrect email or pasfsword.]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.io.FileNotFoundException: C:\Users\trane\git\Selenium-WebDriver-with-Java--Basics-to-Advanced-Frameworks-Course\introduction\src\danielkasprowacademy\resources\GlobalData.properties (System nie może odnaleźć określonej ścieżki)
-at java.base/java.io.FileInputStream.open0(Native Method)
-at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
-at testComponent.TestComponents.BaseTest.initializeDriver(BaseTest.java:30)
-at testComponent.TestComponents.BaseTest.launchApplication(BaseTest.java:64)
+              <![CDATA[java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect email or pasfsword.]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at testComponent.tests.ErrorValidationTest.LoginErrorValidation(ErrorValidationTest.java:28)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
@@ -257,54 +114,23 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.io.FileNotFoundException -->
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testComponent.tests.ErrorValidationTest@6aeb35e6]" started-at="2023-03-22T14:11:24 CET" name="tearDown" finished-at="2023-03-22T14:11:24 CET" duration-ms="203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:testComponent.tests.ErrorValidationTest@6aeb35e6]" started-at="2023-03-22T14:11:24 CET" name="launchApplication" finished-at="2023-03-22T14:11:27 CET" duration-ms="2720" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="ProductErrorValidation()[pri:0, instance:testComponent.tests.ErrorValidationTest@6aeb35e6]" started-at="2023-03-22T14:11:27 CET" name="ProductErrorValidation" finished-at="2023-03-22T14:11:38 CET" duration-ms="11234" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testComponent.tests.ErrorValidationTest@42a48628]" started-at="2023-03-21T15:17:54 CET" name="tearDown" finished-at="2023-03-21T15:17:54 CET" duration-ms="0" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.driver" is null
-at testComponent.TestComponents.BaseTest.tearDown(BaseTest.java:74)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:613)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testComponent.tests.ErrorValidationTest@6aeb35e6]" started-at="2023-03-22T14:11:38 CET" name="tearDown" finished-at="2023-03-22T14:11:38 CET" duration-ms="214" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

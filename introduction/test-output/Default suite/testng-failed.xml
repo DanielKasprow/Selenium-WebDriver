@@ -6,7 +6,6 @@
       <class name="testComponent.tests.ErrorValidationTest">
         <methods>
           <include name="tearDown"/>
-          <include name="ProductErrorValidation"/>
           <include name="launchApplication"/>
           <include name="LoginErrorValidation"/>
         </methods>

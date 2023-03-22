@@ -55,13 +55,13 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/1</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Mar 21 13:33:23 CET 2023</td>
+<td>Started on:</td><td>Tue Mar 21 16:32:38 CET 2023</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (77 ms)</td>
+<tr><td>Total time:</td><td>35 seconds (35156 ms)</td>
 </tr><tr>
-<td>Included groups:</td><td>Purchase </td>
+<td>Included groups:</td><td></td>
 </tr><tr>
 <td>Excluded groups:</td><td></td>
 </tr>
@@ -76,31 +76,30 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testComponent.tests.StandAloneTest.submitOrder()'><b>submitOrder</b><br>Test class: testComponent.tests.StandAloneTest</td>
-<td><div><pre>java.lang.RuntimeException: java.io.FileNotFoundException: C:\Users\trane\git\Selenium-WebDriver-with-Java--Basics-to-Advanced-Frameworks-Course\introduction\src\danielkasprowacademy\data\PurchaseOrder.json (System nie mo¿e odnaleŸæ okreœlonej œcie¿ki)
+<td title='testComponent.tests.SubmitOrderTest.submitOrder()'><b>submitOrder</b><br>Test class: testComponent.tests.SubmitOrderTest<br>Parameters: {password=Iamking@000, product=ZARA COAT 3, email=anshika@gmail.com}</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at testComponent.tests.SubmitOrderTest.submitOrder(SubmitOrderTest.java:44)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: java.io.FileNotFoundException: C:\Users\trane\git\Selenium-WebDriver-with-Java--Basics-to-Advanced-Frameworks-Course\introduction\src\danielkasprowacademy\data\PurchaseOrder.json (System nie mo¿e odnaleŸæ okreœlonej œcie¿ki)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
-	at org.apache.commons.io.FileUtils.openInputStream(FileUtils.java:2388)
-	at org.apache.commons.io.FileUtils.readFileToString(FileUtils.java:2506)
-	at testComponent.TestComponents.BaseTest.getJsonDataToMap(BaseTest.java:50)
-	at testComponent.tests.StandAloneTest.getData(StandAloneTest.java:92)
-	... 19 more
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace887294803", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace887294803'><pre>java.lang.RuntimeException: java.io.FileNotFoundException: C:\Users\trane\git\Selenium-WebDriver-with-Java--Basics-to-Advanced-Frameworks-Course\introduction\src\danielkasprowacademy\data\PurchaseOrder.json (System nie mo¿e odnaleŸæ okreœlonej œcie¿ki)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:57)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:157)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:791)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
-	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:917)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace824250148", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace824250148'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng.Assert.assertTrue(Assert.java:66)
+	at testComponent.tests.SubmitOrderTest.submitOrder(SubmitOrderTest.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -114,25 +113,60 @@ Caused by: java.io.FileNotFoundException: C:\Users\trane\git\Selenium-WebDriver-
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: java.io.FileNotFoundException: C:\Users\trane\git\Selenium-WebDriver-with-Java--Basics-to-Advanced-Frameworks-Course\introduction\src\danielkasprowacademy\data\PurchaseOrder.json (System nie mo¿e odnaleŸæ okreœlonej œcie¿ki)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
-	at org.apache.commons.io.FileUtils.openInputStream(FileUtils.java:2388)
-	at org.apache.commons.io.FileUtils.readFileToString(FileUtils.java:2506)
-	at testComponent.TestComponents.BaseTest.getJsonDataToMap(BaseTest.java:50)
-	at testComponent.tests.StandAloneTest.getData(StandAloneTest.java:92)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:53)
-	... 19 more
+</pre></div></td>
+<td>11</td>
+<td>testComponent.tests.SubmitOrderTest@16150369</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testComponent.tests.SubmitOrderTest.submitOrder()'><b>submitOrder</b><br>Test class: testComponent.tests.SubmitOrderTest<br>Parameters: {password=Iamking@000, product=ADIDAS ORIGINAL, email=shetty@gmail.com}</td>
+<td></td>
+<td>12</td>
+<td>testComponent.tests.SubmitOrderTest@16150369</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testComponent.tests.SubmitOrderTest.OrderHistoryTest()'><b>OrderHistoryTest</b><br>Test class: testComponent.tests.SubmitOrderTest</td>
+<td><div><pre>java.lang.Throwable: Method testComponent.tests.SubmitOrderTest.OrderHistoryTest() on instance testComponent.tests.SubmitOrderTest@16150369 depends on not successfully finished methods 
+[testComponent.tests.SubmitOrderTest.submitOrder() on instance testComponent.tests.SubmitOrderTest@16150369]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2115688245", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2115688245'><pre>java.lang.Throwable: Method testComponent.tests.SubmitOrderTest.OrderHistoryTest() on instance testComponent.tests.SubmitOrderTest@16150369 depends on not successfully finished methods 
+[testComponent.tests.SubmitOrderTest.submitOrder() on instance testComponent.tests.SubmitOrderTest@16150369]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre></div></td>
 <td>0</td>
-<td>testComponent.tests.StandAloneTest@6f1de4c7</td></tr>
+<td>testComponent.tests.SubmitOrderTest@16150369</td></tr>
 </table><p>
 </body>
 </html>

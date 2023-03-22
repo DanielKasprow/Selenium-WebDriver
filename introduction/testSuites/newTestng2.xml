@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite parallel = "tests" name="Suite">
+
 <groups>
 	<run>
-	<include name="Purchase"></include>
+	<include name="ErrorHanling"></include>
 	</run>
 </groups>
 	<test thread-count="5" name="Test">
 		<classes>
-			<class name="testComponent.tests.StandAloneTest" />
+			<class name="testComponent.tests.SubmitOrderTest" />
 		</classes>
 	</test> <!-- Test -->
 
