@@ -2,19 +2,19 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Loan Department">
 
-    <test name="Regression">
-        <groups>
-            <run>
-                <exclude name ="Smoke"/>
-            </run>
-        </groups>
-    <classes>
-      <class name="testing.Day1"/>
-      <class name="testing.Day2"/>
-      <class name ="testing.Day4"/>
-        <class name="testing.Day3"/>
-      
-    </classes>
-  </test> 
+	<test name="Regression">
+		<groups>
+			<run>
+				<exclude name="Smoke" />
+			</run>
+		</groups>
+		<classes>
+			<class name="testing.Day1" />
+			<class name="testing.Day2" />
+			<class name="testing.Day4" />
+			<class name="testing.Day3" />
+
+		</classes>
+	</test>
 
 </suite> 
